@@ -1,7 +1,7 @@
 :root {
-  --planet-size: 100px;
-  --planet-spin-period: 25s;
-  --planet-night-cycle-period: 10s;
+  --planet-size: 200px;
+  --planet-spin-period: 15s;
+  --planet-night-cycle-period: 7s;
 
   --planet-orbit-angle: -25deg;
 
@@ -11,7 +11,7 @@
 .layout {
   height: 100%;
   /* background: #000; */
-
+  margin-top: 15vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -161,4 +161,18 @@
 }
 .planet__night_image {
   animation: var(--planet-spin-period) planetPreviewSpinSvg linear infinite;
+}
+
+.main_title {
+  /* text-align: center; */
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 44px;
+  letter-spacing: 0.09rem;
+}
+
+.secondary_title {
+  /* text-align: center; */
+  font-weight: 100;
 }

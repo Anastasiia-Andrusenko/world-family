@@ -4,9 +4,13 @@ import classNames from 'classnames'
 import css from '../World/World.module.css';
 
 export const World = () => {
-  return <div className={css.layout}>
+	return <>
+		<h1 className={css.main_title}>Your family is everywhere!</h1>
+		<h2 className={css.secondary_title}>Click on the Planet for more details</h2>
+		<div className={css.layout}>
+		<p className=''></p>
 	<div className={css.planet}>
-      <div className={css.planet__day}></div>
+    <div className={css.planet__day}></div>
 
 		<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className={css.planet__night}>
 			<defs>
@@ -34,4 +38,5 @@ export const World = () => {
 		</svg>
 	</div>
 </div>
+	</>
 };
