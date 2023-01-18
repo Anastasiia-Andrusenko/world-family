@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/world-family/static/css/main.5aacedb1.css",
-    "main.js": "/world-family/static/js/main.6250d896.js",
+    "main.css": "/world-family/static/css/main.1dffc42f.css",
+    "main.js": "/world-family/static/js/main.de34e8e7.js",
     "static/media/lena.png": "/world-family/static/media/lena.d4dd6b905577bec691b9.png",
     "static/media/andrew.png": "/world-family/static/media/andrew.035bce9d527b424fc9d4.png",
     "static/media/sasha.png": "/world-family/static/media/sasha.fcfb22e1120c6c997e01.png",
@@ -10,12 +10,13 @@
     "static/media/ann.png": "/world-family/static/media/ann.58b996022ab7dc3f329f.png",
     "static/media/nina.png": "/world-family/static/media/nina.fdd2bb1f1d599b9a9a2c.png",
     "static/media/tetiana.png": "/world-family/static/media/tetiana.8630d1a7a8aff5b14691.png",
+    "static/media/clevelend.jpg": "/world-family/static/media/clevelend.d32dea9a31134742efc2.jpg",
     "index.html": "/world-family/index.html",
-    "main.5aacedb1.css.map": "/world-family/static/css/main.5aacedb1.css.map",
-    "main.6250d896.js.map": "/world-family/static/js/main.6250d896.js.map"
+    "main.1dffc42f.css.map": "/world-family/static/css/main.1dffc42f.css.map",
+    "main.de34e8e7.js.map": "/world-family/static/js/main.de34e8e7.js.map"
   },
   "entrypoints": [
-    "static/css/main.5aacedb1.css",
-    "static/js/main.6250d896.js"
+    "static/css/main.1dffc42f.css",
+    "static/js/main.de34e8e7.js"
   ]
 }
