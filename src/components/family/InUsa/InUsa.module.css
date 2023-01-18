@@ -1,0 +1,41 @@
+.in__usa {
+}
+
+.link {
+}
+
+.list {
+  border: 1px solid white;
+  border-radius: 16px;
+  width: fit-content;
+  padding: 8px 12px 8px 12px;
+  box-shadow: 8px 8px 22px 0px rgb(248, 179, 252);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 255, 184, 0.3) 0%,
+    rgba(9, 9, 121, 0) 22%,
+    rgba(145, 6, 163, 0.3) 55%,
+    rgba(4, 124, 197, 0) 77%,
+    rgba(0, 212, 255, 0.3) 98%
+  );
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.avatar {
+  padding: 4px;
+  width: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.547);
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 14px 0px rgb(255, 255, 255);
+}
+
+.name {
+  margin-left: 10px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
