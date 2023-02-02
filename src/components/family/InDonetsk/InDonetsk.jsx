@@ -5,8 +5,8 @@ import nikolay from "../../../img/nikolay.png";
 import lena from "../../../img/lena.png";
 import sasha from "../../../img/sasha.png";
 
-export const InDonetsk = () => {
-  return <div className={css.in__donetsk}>
+export const InDonetsk = ({onMembersClick}) => {
+  return <div className={css.in__donetsk} id="InDonetsk" onClick={onMembersClick}>
     <a className={css.link} href="#Cleveland">
       <ul className={css.list}>
         <li className={css.item}>

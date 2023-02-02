@@ -3,8 +3,8 @@ import css from "../InPoland/InPoland.module.css";
 import andrew from "../../../img/andrew.png";
 import nastia from "../../../img/nastia.png";
 
-export const InPoland = () => {
-  return <div className={css.in__pl}>
+export const InPoland = ({onMembersClick}) => {
+  return <div className={css.in__pl} id='InPoland' onClick={onMembersClick}>
     <a className={css.link} href="#Cleveland">
       <ul className={css.list}>
         <li className={css.item}>

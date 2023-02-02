@@ -4,8 +4,8 @@ import css from "../InUsa/InUsa.module.css";
 import ann from "../../../img/ann.png";
 import tania from "../../../img/tetiana.png";
 
-export const InUsa = () => {
-  return <div className={css.in__usa}>
+export const InUsa = ({onMembersClick}) => {
+  return <div className={css.in__usa} id='inUsa' onClick={onMembersClick}>
     <a className={css.link} href="#Cleveland">
       <ul className={css.list}>
         <li className={css.item}>
