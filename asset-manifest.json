@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/world-family/static/css/main.340100d2.css",
-    "main.js": "/world-family/static/js/main.2c613a43.js",
+    "main.css": "/world-family/static/css/main.cf100e48.css",
+    "main.js": "/world-family/static/js/main.756f5c2d.js",
     "static/media/lena.png": "/world-family/static/media/lena.d4dd6b905577bec691b9.png",
     "static/media/andrew.png": "/world-family/static/media/andrew.035bce9d527b424fc9d4.png",
     "static/media/sasha.png": "/world-family/static/media/sasha.fcfb22e1120c6c997e01.png",
@@ -10,13 +10,15 @@
     "static/media/ann.png": "/world-family/static/media/ann.58b996022ab7dc3f329f.png",
     "static/media/nina.png": "/world-family/static/media/nina.fdd2bb1f1d599b9a9a2c.png",
     "static/media/tetiana.png": "/world-family/static/media/tetiana.8630d1a7a8aff5b14691.png",
-    "static/media/clevelend.jpg": "/world-family/static/media/clevelend.d32dea9a31134742efc2.jpg",
+    "static/media/lodz.jpg": "/world-family/static/media/lodz.7484e0259dc1b0f61dfa.jpg",
+    "static/media/donetsk.jpg": "/world-family/static/media/donetsk.bf669af8572ed53cbbab.jpg",
+    "static/media/washington.jpg": "/world-family/static/media/washington.3806d79238566f49fba1.jpg",
     "index.html": "/world-family/index.html",
-    "main.340100d2.css.map": "/world-family/static/css/main.340100d2.css.map",
-    "main.2c613a43.js.map": "/world-family/static/js/main.2c613a43.js.map"
+    "main.cf100e48.css.map": "/world-family/static/css/main.cf100e48.css.map",
+    "main.756f5c2d.js.map": "/world-family/static/js/main.756f5c2d.js.map"
   },
   "entrypoints": [
-    "static/css/main.340100d2.css",
-    "static/js/main.2c613a43.js"
+    "static/css/main.cf100e48.css",
+    "static/js/main.756f5c2d.js"
   ]
 }
