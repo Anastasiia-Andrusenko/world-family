@@ -14,20 +14,29 @@ import Modal from "./Modal/Modal";
 // import { UsaCard } from "./USAcard/UsaCard";
 
 export const App = () => {
-  // const [idOfMembers, setIdOfMembers] = useState('');
+  const [idOfMembers, setIdOfMembers] = useState({
+    idOfMembers: '',
+  });
   const [modalVisible, setModalVisible] = useState(false);
+  // console.log(idOfMembers);
 
   const onMembersClick = (evt) => {
     // console.log(evt.currentTarget);
     const { id } = evt.currentTarget;
-    console.log(id);
+    // console.log(id);
 
     setModalVisible(!modalVisible);
+    setIdOfMembers( 
+      {idOfMembers: id}
+    )
   }
 
 
   const onClose = () => {
     setModalVisible(!modalVisible);
+    setIdOfMembers( 
+      {idOfMembers: ''}
+    )
   }
 
   
@@ -42,7 +51,7 @@ export const App = () => {
       <InDonetsk onMembersClick={onMembersClick}/>
       <InPoland onMembersClick={onMembersClick}/>
       {/* <UsaCard/> */}
-      {modalVisible && <Modal onClose={onClose} /> }
+      {modalVisible && <Modal onClose={onClose} idOfMembers={idOfMembers.idOfMembers} /> }
     </div>
   )
 };
