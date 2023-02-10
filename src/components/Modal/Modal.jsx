@@ -3,8 +3,8 @@ import { Component } from 'react';
 import { SlClose } from "react-icons/sl";
 // import PropTypes from 'prop-types';
 import css from '../Modal/Modal.module.css';
-// import cleveland from "../../img/clevelend.jpg";
-import washington from "../../img/washington.jpg";
+import cleveland from "../../img/clevelend.jpg";
+// import washington from "../../img/washington.jpg";
 import lodz from "../../img/lodz.jpg";
 import donetsk from "../../img/donetsk.jpg";
 import Clock from 'react-live-clock';
@@ -13,12 +13,14 @@ import Clock from 'react-live-clock';
 
 const modalRoot = document.querySelector('#modal-root')
 
+// const htmlRef = document.getElementsByTagName('html');
 
 export default class Modal extends Component {
 
-
+  
   componentDidMount() {
     window.addEventListener('keydown', this.handleKeydown);
+    // htmlRef.style.overflow = 'hidden';
   };
 
   componentWillUnmount() {
@@ -52,7 +54,7 @@ export default class Modal extends Component {
     if (idOfMembers === 'InDonetsk') {
        return 'Donetsk';
     } else if (idOfMembers === 'inUsa') {
-      return 'Washington';
+      return 'Cleveland';
     } if (idOfMembers === 'InPoland') {
       return 'Poland (Lodz)';
     }
@@ -62,7 +64,7 @@ export default class Modal extends Component {
     if (idOfMembers === 'InDonetsk') {
        return donetsk;
     } else if (idOfMembers === 'inUsa') {
-      return washington;
+      return cleveland;
     } if (idOfMembers === 'InPoland') {
       return lodz;
     }
