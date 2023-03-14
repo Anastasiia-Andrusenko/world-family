@@ -9,22 +9,23 @@ import lodz from "../../img/lodz.jpg";
 import donetsk from "../../img/donetsk.jpg";
 import Clock from 'react-live-clock';
 
-
+import { motion } from "framer-motion";
 
 const modalRoot = document.querySelector('#modal-root')
 
 // const htmlRef = document.getElementsByTagName('html');
 
-export default class Modal extends Component {
+const htmlRef = document.getElementById('html');
 
-  
+export default class Modal extends Component {
   componentDidMount() {
     window.addEventListener('keydown', this.handleKeydown);
-    // htmlRef.style.overflow = 'hidden';
+    htmlRef.style.overflow = "hidden";
   };
 
   componentWillUnmount() {
     window.removeEventListener('keydown', this.handleKeydown);
+    htmlRef.style.overflow = "unset";
   }
 
   handleKeydown = evt => {
@@ -79,24 +80,35 @@ export default class Modal extends Component {
     // console.log(timezoneName);
     return createPortal(
       <div className={css.overlay}>
-        <div className={css.modal}>
-          <h2 className={css.title}>{cityName}</h2>
-          <img className={css.img} alt={cityName} src={imgSrc}></img>
-          {/* <div className={css.whether}>+4 rain</div> */}
-          <div className={css.time}>
-            <Clock format={'HH:mm:ss'} ticking={true} timezone={timezoneName} />
+        <motion.div
+          className={css.modal}
+          initial={{ scale: 0}}
+          animate={{ scale: 1}}
+          transition={{
+            type: "spring",
+            stiffness: 180,
+            damping: 40
+          }}
+        >
+          <div >
+            <h2 className={css.title}>{cityName}</h2>
+            <img className={css.img} alt={cityName} src={imgSrc}></img>
+            {/* <div className={css.whether}>+4 rain</div> */}
+            <div className={css.time}>
+              <Clock format={'HH:mm:ss'} ticking={true} timezone={timezoneName} />
+            </div>
+            <div className={css.day}>
+              <Clock format={'D MMMM, dddd'} ticking={false} timezone={timezoneName} />
+            </div>
+            <div className={css.info}>
+              {/* <p className={css.text}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p> */}
+            </div>
+            <SlClose className={css.icon} onClick={this.props.onClose} />
           </div>
-          <div className={css.day}>
-            <Clock format={'D MMMM, dddd'} ticking={false} timezone={timezoneName} />
-          </div>
-          <div className={css.info}>
-            {/* <p className={css.text}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p> */}
-          </div>
-          <SlClose className={css.icon} onClick={this.props.onClose} />
-        </div>
-      </div>, modalRoot);
+          </motion.div>
+        </div>, modalRoot);
   }
 }
 
