@@ -5,7 +5,7 @@ import nastia from "../../../img/nastia.png";
 
 export const InPoland = ({onMembersClick}) => {
   return <div className={css.in__pl} id='InPoland' onClick={onMembersClick}>
-    <a className={css.link} href="#Cleveland">
+    <div className={css.link}>
       <ul className={css.list}>
         <li className={css.item}>
           <img alt="" src={andrew} className={css.avatar}></img>
@@ -16,6 +16,6 @@ export const InPoland = ({onMembersClick}) => {
           <span className={css.name}>Nastia</span>  
         </li>
       </ul>
-    </a>
+    </div>
   </div>
 } 

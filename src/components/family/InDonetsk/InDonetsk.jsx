@@ -7,7 +7,7 @@ import sasha from "../../../img/sasha.png";
 
 export const InDonetsk = ({onMembersClick}) => {
   return <div className={css.in__donetsk} id="InDonetsk" onClick={onMembersClick}>
-    <a className={css.link} href="#Cleveland">
+    <div className={css.link}>
       <ul className={css.list}>
         <li className={css.item}>
           <img alt="" src={nina} className={css.avatar}></img>
@@ -20,6 +20,6 @@ export const InDonetsk = ({onMembersClick}) => {
           <span className={css.name}>grandfathers</span>  
         </li>
       </ul>
-    </a>
+    </div>
   </div>
 } 

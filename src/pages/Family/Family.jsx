@@ -6,7 +6,6 @@ import { InDonetsk } from "../../components/family/InDonetsk/InDonetsk";
 import { InPoland } from "../../components/family/InPoland/InPoland";
 import Modal from "../../components/Modal/Modal";
 
-
 import css from './Family.module.css';
 import { motion } from "framer-motion";
 
@@ -17,6 +16,7 @@ const Family = () => {
   });
   const [modalVisible, setModalVisible] = useState(false);
   // console.log(idOfMembers);
+
 
   const onMembersClick = (evt) => {
     // console.log(evt.currentTarget);

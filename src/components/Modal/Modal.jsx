@@ -10,6 +10,7 @@ import donetsk from "../../img/donetsk.jpg";
 import Clock from 'react-live-clock';
 
 import { motion } from "framer-motion";
+import Weather from './Weather';
 
 const modalRoot = document.querySelector('#modal-root')
 
@@ -21,6 +22,7 @@ export default class Modal extends Component {
   componentDidMount() {
     window.addEventListener('keydown', this.handleKeydown);
     htmlRef.style.overflow = "hidden";
+
   };
 
   componentWillUnmount() {
@@ -71,13 +73,23 @@ export default class Modal extends Component {
     }
   }
 
+  getCityNameForWeather = (idOfMembers) => {
+    if (idOfMembers === 'inUsa') {
+      return 'Cleveland';
+    } else if (idOfMembers === 'InDonetsk') {
+      return 'Donetsk';
+    } else if (idOfMembers === 'InPoland') {
+      return 'Lodz';
+    }
+  }
 
 
   render() {
     const timezoneName = this.getTimezone(this.props.idOfMembers);
     const cityName = this.getCityName(this.props.idOfMembers);
     const imgSrc = this.getImg(this.props.idOfMembers);
-    // console.log(timezoneName);
+    const cityForWeather = this.getCityNameForWeather(this.props.idOfMembers);
+    // console.log(cityForWeather);
     return createPortal(
       <div className={css.overlay}>
         <motion.div
@@ -101,9 +113,7 @@ export default class Modal extends Component {
               <Clock format={'D MMMM, dddd'} ticking={false} timezone={timezoneName} />
             </div>
             <div className={css.info}>
-              {/* <p className={css.text}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p> */}
+              <Weather city={cityForWeather} />
             </div>
             <SlClose className={css.icon} onClick={this.props.onClose} />
           </div>
