@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/world-family/static/css/main.c4ef2379.css",
-    "main.js": "/world-family/static/js/main.56487b90.js",
+    "main.js": "/world-family/static/js/main.79896a02.js",
     "static/css/173.d084ccfd.chunk.css": "/world-family/static/css/173.d084ccfd.chunk.css",
     "static/js/173.9bb76314.chunk.js": "/world-family/static/js/173.9bb76314.chunk.js",
     "static/css/288.fdc4b812.chunk.css": "/world-family/static/css/288.fdc4b812.chunk.css",
-    "static/js/288.bc3007a0.chunk.js": "/world-family/static/js/288.bc3007a0.chunk.js",
+    "static/js/288.7faf74d4.chunk.js": "/world-family/static/js/288.7faf74d4.chunk.js",
     "static/js/394.0b67acb6.chunk.js": "/world-family/static/js/394.0b67acb6.chunk.js",
     "static/js/262.8f49dee9.chunk.js": "/world-family/static/js/262.8f49dee9.chunk.js",
     "static/media/lena.png": "/world-family/static/media/lena.d4dd6b905577bec691b9.png",
@@ -21,16 +21,16 @@
     "static/media/donetsk.jpg": "/world-family/static/media/donetsk.bf669af8572ed53cbbab.jpg",
     "index.html": "/world-family/index.html",
     "main.c4ef2379.css.map": "/world-family/static/css/main.c4ef2379.css.map",
-    "main.56487b90.js.map": "/world-family/static/js/main.56487b90.js.map",
+    "main.79896a02.js.map": "/world-family/static/js/main.79896a02.js.map",
     "173.d084ccfd.chunk.css.map": "/world-family/static/css/173.d084ccfd.chunk.css.map",
     "173.9bb76314.chunk.js.map": "/world-family/static/js/173.9bb76314.chunk.js.map",
     "288.fdc4b812.chunk.css.map": "/world-family/static/css/288.fdc4b812.chunk.css.map",
-    "288.bc3007a0.chunk.js.map": "/world-family/static/js/288.bc3007a0.chunk.js.map",
+    "288.7faf74d4.chunk.js.map": "/world-family/static/js/288.7faf74d4.chunk.js.map",
     "394.0b67acb6.chunk.js.map": "/world-family/static/js/394.0b67acb6.chunk.js.map",
     "262.8f49dee9.chunk.js.map": "/world-family/static/js/262.8f49dee9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c4ef2379.css",
-    "static/js/main.56487b90.js"
+    "static/js/main.79896a02.js"
   ]
 }
