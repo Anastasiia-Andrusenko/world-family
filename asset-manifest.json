@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/world-family/static/css/main.c4ef2379.css",
-    "main.js": "/world-family/static/js/main.0653f263.js",
-    "static/css/173.d084ccfd.chunk.css": "/world-family/static/css/173.d084ccfd.chunk.css",
+    "main.js": "/world-family/static/js/main.cacb7885.js",
+    "static/css/173.1b334690.chunk.css": "/world-family/static/css/173.1b334690.chunk.css",
     "static/js/173.6340fdbe.chunk.js": "/world-family/static/js/173.6340fdbe.chunk.js",
-    "static/css/242.e11eb675.chunk.css": "/world-family/static/css/242.e11eb675.chunk.css",
-    "static/js/242.b36acbcc.chunk.js": "/world-family/static/js/242.b36acbcc.chunk.js",
+    "static/css/242.446418a8.chunk.css": "/world-family/static/css/242.446418a8.chunk.css",
+    "static/js/242.b56fba79.chunk.js": "/world-family/static/js/242.b56fba79.chunk.js",
     "static/js/394.0b67acb6.chunk.js": "/world-family/static/js/394.0b67acb6.chunk.js",
     "static/js/436.554ac18c.chunk.js": "/world-family/static/js/436.554ac18c.chunk.js",
     "static/media/lena.png": "/world-family/static/media/lena.d4dd6b905577bec691b9.png",
@@ -21,16 +21,16 @@
     "static/media/donetsk.jpg": "/world-family/static/media/donetsk.bf669af8572ed53cbbab.jpg",
     "index.html": "/world-family/index.html",
     "main.c4ef2379.css.map": "/world-family/static/css/main.c4ef2379.css.map",
-    "main.0653f263.js.map": "/world-family/static/js/main.0653f263.js.map",
-    "173.d084ccfd.chunk.css.map": "/world-family/static/css/173.d084ccfd.chunk.css.map",
+    "main.cacb7885.js.map": "/world-family/static/js/main.cacb7885.js.map",
+    "173.1b334690.chunk.css.map": "/world-family/static/css/173.1b334690.chunk.css.map",
     "173.6340fdbe.chunk.js.map": "/world-family/static/js/173.6340fdbe.chunk.js.map",
-    "242.e11eb675.chunk.css.map": "/world-family/static/css/242.e11eb675.chunk.css.map",
-    "242.b36acbcc.chunk.js.map": "/world-family/static/js/242.b36acbcc.chunk.js.map",
+    "242.446418a8.chunk.css.map": "/world-family/static/css/242.446418a8.chunk.css.map",
+    "242.b56fba79.chunk.js.map": "/world-family/static/js/242.b56fba79.chunk.js.map",
     "394.0b67acb6.chunk.js.map": "/world-family/static/js/394.0b67acb6.chunk.js.map",
     "436.554ac18c.chunk.js.map": "/world-family/static/js/436.554ac18c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c4ef2379.css",
-    "static/js/main.0653f263.js"
+    "static/js/main.cacb7885.js"
   ]
 }
