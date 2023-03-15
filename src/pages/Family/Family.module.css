@@ -18,3 +18,29 @@
   margin-top: 20px;
   margin-bottom: 40px;
 }
+
+@media screen and (min-width: 800px) {
+  .list {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .titles {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+
+  .text {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 160px;
+  }
+}

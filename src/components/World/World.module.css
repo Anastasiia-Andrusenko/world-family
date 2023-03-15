@@ -187,3 +187,26 @@
   justify-content: center;
   gap: 16px;
 }
+
+@media screen and (min-width: 800px) {
+  .main_title {
+    margin-top: 90px;
+    margin-bottom: 40px;
+    font-size: 70px;
+    line-height: 4rem;
+
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .secondary_title {
+    font-size: 30px;
+  }
+
+  .header {
+    gap: 26px;
+  }
+}

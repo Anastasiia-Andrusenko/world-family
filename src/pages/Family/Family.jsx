@@ -40,9 +40,11 @@ const Family = () => {
     <motion.div
       initial={{ opacity: 0, scale: 0.1, y: -200 }}
       animate={{ opacity: 1, scale: 1, y: 100 }}
-			transition={{ duration: 1, delay: 0 }}>
-       <h2 className={css.title}> Where are they ?</h2>
-      <h2 className={css.title}>How are they ?</h2>
+      transition={{ duration: 1, delay: 0 }}>
+      <div className={css.titles}>
+        <h2 className={css.title}> Where are they ?</h2>
+        <h2 className={css.title}>How are they ?</h2>
+      </div>
       <motion.div
         initial={{ opacity: 0, scale: 0.1 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -50,13 +52,20 @@ const Family = () => {
           <p className={css.text}>select a card for details</p>
       </motion.div>
       <motion.div
+        className={css.list}
         initial={{ opacity: 0, scale: 0.1 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, delay: 1 }}>
+        <div className={css.item}>
           <InUsa onMembersClick={onMembersClick} />
-          <InDonetsk onMembersClick={onMembersClick}/>
-          <InPoland onMembersClick={onMembersClick}/>
-      </motion.div>
+        </div>
+        <div className={css.item}>
+          <InDonetsk onMembersClick={onMembersClick} />
+        </div>
+        <div className={css.item}>
+          <InPoland onMembersClick={onMembersClick} />
+         </div>
+      </motion.div> 
         
     </motion.div>
     {modalVisible && <Modal onClose={onClose} idOfMembers={idOfMembers.idOfMembers} /> }

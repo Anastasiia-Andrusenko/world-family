@@ -47,3 +47,44 @@
   font-size: 24px;
   margin-top: 12px;
 }
+
+@media screen and (min-width: 800px) {
+  .in__donetsk {
+    padding: 0;
+  }
+
+  .list {
+    height: 400px;
+    justify-content: space-around;
+    transform: scale(0.9);
+    transition: all 250ms;
+  }
+
+  .list:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  .item {
+    width: 400px;
+    /* width: calc((100vw / 3) - 100px); */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imgs {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+  }
+
+  .avatar {
+    width: 130px;
+  }
+
+  .name {
+    font-size: 30px;
+  }
+}

@@ -11,9 +11,9 @@
 
 .modal {
   margin: auto;
-  top: 50%;
+  /* top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   padding: 46px 26px;
   text-align: center;
   width: 90vw;
@@ -65,4 +65,30 @@
   font-weight: 900;
   margin-bottom: 6px;
   letter-spacing: 0.15rem;
+}
+
+@media screen and (min-width: 800px) {
+  .modal {
+    position: relative;
+    margin-top: 100px;
+    max-width: 900px;
+    max-height: 700px;
+    border-radius: 30px;
+  }
+
+  .icon {
+    top: 6px;
+    right: 10px;
+  }
+
+  .img {
+    width: 40%;
+  }
+
+  .blok {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
 }

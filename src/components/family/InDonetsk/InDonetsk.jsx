@@ -10,13 +10,17 @@ export const InDonetsk = ({onMembersClick}) => {
     <div className={css.link}>
       <ul className={css.list}>
         <li className={css.item}>
-          <img alt="" src={nina} className={css.avatar}></img>
-          <img alt="" src={lena} className={css.avatar}></img>
+          <div className={css.imgs}>
+            <img alt="" src={nina} className={css.avatar}></img>
+            <img alt="" src={lena} className={css.avatar}></img>
+          </div>
           <span className={css.name}>grandmothers</span>
         </li>
         <li className={css.item}>
-          <img alt="" src={nikolay} className={css.avatar}></img>
-          <img alt="" src={sasha} className={css.avatar}></img>
+          <div className={css.imgs}>
+            <img alt="" src={nikolay} className={css.avatar}></img>
+            <img alt="" src={sasha} className={css.avatar}></img>
+          </div>
           <span className={css.name}>grandfathers</span>  
         </li>
       </ul>

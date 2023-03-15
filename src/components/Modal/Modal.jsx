@@ -105,16 +105,22 @@ export default class Modal extends Component {
         >
           <div >
             <h2 className={css.title}>{cityName}</h2>
-            <img className={css.img} alt={cityName} src={imgSrc}></img>
-            {/* <div className={css.whether}>+4 rain</div> */}
-            <div className={css.time}>
-              <Clock format={'HH:mm:ss'} ticking={true} timezone={timezoneName} />
-            </div>
-            <div className={css.day}>
-              <Clock format={'D MMMM, dddd'} ticking={false} timezone={timezoneName} />
-            </div>
-            <div className={css.info}>
-              <Weather city={cityForWeather} />
+            
+            <div className={css.blok}>
+              <img className={css.img} alt={cityName} src={imgSrc}></img>
+              <div className={css.day_info}>
+                <div className={css.date_time}>
+                <div className={css.time}>
+                  <Clock format={'HH:mm:ss'} ticking={true} timezone={timezoneName} />
+                </div>
+                <div className={css.day}>
+                  <Clock format={'D MMMM, dddd'} ticking={false} timezone={timezoneName} />
+                </div>
+              </div>
+              <div className={css.info}>
+                <Weather city={cityForWeather} />
+              </div>
+              </div>
             </div>
             <News city={cityName} />
             <SlClose className={css.icon} onClick={this.props.onClose} />
