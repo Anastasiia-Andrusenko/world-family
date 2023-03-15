@@ -7,10 +7,10 @@ import { ColorRing } from 'react-loader-spinner';
 
 
 const News = ({ city }) => {
-  console.log(city);
+  // console.log(city);
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(false);
-  // const [error, setError] = useState(null);
+  const [error, setError] = useState(null);
 
 
   useEffect(() => {
@@ -24,7 +24,7 @@ const News = ({ city }) => {
         setItems(prevItems => ([...prevItems, ...data.articles]));
       } catch (error) {
         console.log(error.message);
-        // setError(error.message);
+        setError(error.message);
         } finally {
           setLoading(false);
         }
@@ -38,7 +38,7 @@ const News = ({ city }) => {
         setItems(prevItems => ([...prevItems, ...data.articles]));
       } catch (error) {
         console.log(error.message);
-        // setError(error.message);
+        setError(error.message);
       } finally {
           setLoading(false);
         }
@@ -51,7 +51,7 @@ const News = ({ city }) => {
         setItems(prevItems => ([...prevItems, ...data.articles]));
       } catch (error) {
         console.log(error.message);
-        // setError(error.message);
+        setError(error.message);
       } finally {
           setLoading(false);
         }
@@ -72,15 +72,15 @@ const News = ({ city }) => {
   wrapperClass="blocks-wrapper"
   colors={['#8c03fc', '#9d26ff', '#ac49fc', '#c175ff', '#d5a4fc']}
 /></div> : <div className={css.container}>
-    <p className={css.title}>News</p>
-    <ul className={css.list}>
+      <p className={css.title}>News</p>
+      {error ? <p>{error}</p> : <ul className={css.list}>
       {items.map(item => 
         <li key={item._id} className={css.item}>
           <p className={css.article}>{item.title}</p>
           <a href={item.link} className={css.link}>link to the article</a>
         </li>
       )}
-    </ul>
+    </ul>}
   </div>
 }
 
