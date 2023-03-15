@@ -57,7 +57,7 @@ export const World = () => {
 				<motion.div
 					initial={{ opacity: 0, scale: 0.1 }}
           animate={{ opacity: 1, scale: 1 }}
-					transition={{ duration: 6, delay: 2 }}>
+					transition={{ duration: 5, delay: 2 }}>
 					<div className={css.planet}>
 					<div className={css.planet__day}></div>
 					<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className={css.planet__night}>

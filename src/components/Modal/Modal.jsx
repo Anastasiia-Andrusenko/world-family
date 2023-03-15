@@ -11,6 +11,7 @@ import Clock from 'react-live-clock';
 
 import { motion } from "framer-motion";
 import Weather from './Weather';
+import News from './News';
 
 const modalRoot = document.querySelector('#modal-root')
 
@@ -115,6 +116,7 @@ export default class Modal extends Component {
             <div className={css.info}>
               <Weather city={cityForWeather} />
             </div>
+            <News city={cityName} />
             <SlClose className={css.icon} onClick={this.props.onClose} />
           </div>
           </motion.div>
