@@ -48,6 +48,13 @@
   margin-top: 12px;
 }
 
+.imgs {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 @media screen and (min-width: 800px) {
   .in__donetsk {
     padding: 0;
@@ -72,13 +79,9 @@
     flex-direction: column;
   }
 
-  .imgs {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  /* .imgs {
     gap: 80px;
-  }
+  } */
 
   .avatar {
     width: 130px;

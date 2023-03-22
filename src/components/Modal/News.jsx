@@ -37,7 +37,7 @@ const News = ({ city }) => {
         console.log(data);
         setItems(prevItems => ([...prevItems, ...data.articles]));
       } catch (error) {
-        console.log(error.message);
+        // console.log(error.message);
         setError(error.message);
       } finally {
           setLoading(false);
@@ -54,6 +54,7 @@ const News = ({ city }) => {
         setError(error.message);
       } finally {
           setLoading(false);
+          setError(null);
         }
       }
     }
@@ -63,7 +64,7 @@ const News = ({ city }) => {
   }, [city, setItems]);
 
 
-  return loading ? <div style={{marginTop: '40vh', marginLeft: '40vw'}}><ColorRing
+  return loading ? <div style={{marginTop: '10vh', marginLeft: '10vw'}}><ColorRing
   visible={true}
   height="80"
   width="80"
@@ -77,7 +78,7 @@ const News = ({ city }) => {
       {items.map(item => 
         <li key={item._id} className={css.item}>
           <p className={css.article}>{item.title}</p>
-          <a href={item.link} className={css.link}>link to the article</a>
+          <a href={item.link} className={css.link} target='_blank' rel="noreferrer">link to the article</a>
         </li>
       )}
     </ul>}
