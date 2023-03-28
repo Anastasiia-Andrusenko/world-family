@@ -78,12 +78,12 @@ export default class Modal extends Component {
     if (idOfMembers === 'inUsa') {
       return 'Cleveland';
     } else if (idOfMembers === 'InDonetsk') {
-      return 'Donetsk';
+      return '47.917012,37.620669';
     } else if (idOfMembers === 'InPoland') {
       return 'Lodz';
     }
   }
-
+// 47.917012, 37.620669
 
   render() {
     const timezoneName = this.getTimezone(this.props.idOfMembers);

@@ -10,7 +10,7 @@ const Weather = ({city}) => {
 
   useEffect(() => {
     getWeather(city).then(response => {
-      // console.log(response);
+      console.log(response);
       setState({
         temp: response.current.temp_c,
         feelTemp: response.current.feelslike_c,
