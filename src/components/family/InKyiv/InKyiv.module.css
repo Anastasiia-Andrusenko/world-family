@@ -2,8 +2,6 @@
   padding: 40px;
 }
 
-/*  */
-
 .list {
   display: flex;
   flex-direction: column;
@@ -31,10 +29,14 @@
   margin-bottom: 6px;
 }
 
+.alone {
+  gap: 30px;
+  flex-direction: column;
+}
+
 .avatar {
   padding: 4px;
   width: 88px;
-  height: 88px;
   border: 1px solid rgba(255, 255, 255, 0.547);
   border-radius: 50%;
   box-shadow: inset 0px 0px 14px 0px rgb(255, 255, 255);
@@ -44,4 +46,38 @@
   text-transform: uppercase;
   font-weight: 800;
   font-size: 24px;
+}
+
+@media screen and (min-width: 800px) {
+  .in__kyiv {
+    padding: 0;
+  }
+
+  .list {
+    height: 400px;
+    justify-content: space-around;
+    transform: scale(0.9);
+    transition: all 250ms;
+  }
+
+  .list:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  .item {
+    width: 400px;
+  }
+
+  .alone {
+    width: 300px;
+  }
+
+  .avatar {
+    width: 130px;
+  }
+
+  .name {
+    font-size: 30px;
+  }
 }
