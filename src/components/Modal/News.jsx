@@ -1,6 +1,6 @@
 
 
-import { searchNewsAboutUA, searchNewsAboutUsa, searchNewsAboutPl } from 'api/getNews';
+import { searchNewsAboutUA, searchNewsAboutUsa, searchNewsAboutPl, searchNewsAboutKyiv } from 'api/getNews';
 import { useEffect, useState } from 'react';
 import css from './News.module.css';
 import { ColorRing } from 'react-loader-spinner';
@@ -56,7 +56,21 @@ const News = ({ city }) => {
           setLoading(false);
           setError(null);
         }
+      } else if (city === 'Kyiv') {
+        try {
+        setLoading(true);
+        const data = await searchNewsAboutKyiv();
+        // console.log(data);
+        setItems(prevItems => ([...prevItems, ...data.articles]));
+      } catch (error) {
+        // console.log(error.message);
+        setError(error.message);
+      } finally {
+          setLoading(false);
+          setError(null);
+        }
       }
+
     }
 
     fetchNews();

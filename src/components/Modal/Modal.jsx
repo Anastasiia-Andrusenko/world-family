@@ -7,6 +7,7 @@ import cleveland from "../../img/clevelend.jpg";
 // import washington from "../../img/washington.jpg";
 import lodz from "../../img/lodz.jpg";
 import donetsk from "../../img/donetsk.jpg";
+import kyiv from "../../img/kyiv.jpg"; 
 import Clock from 'react-live-clock';
 
 import { motion } from "framer-motion";
@@ -59,8 +60,10 @@ export default class Modal extends Component {
        return 'Donetsk';
     } else if (idOfMembers === 'inUsa') {
       return 'Cleveland';
-    } if (idOfMembers === 'InPoland') {
+    } else if (idOfMembers === 'InPoland') {
       return 'Poland (Lodz)';
+    } if (idOfMembers === 'InKyiv') {
+      return 'Kyiv';
     }
   }
 
@@ -69,8 +72,10 @@ export default class Modal extends Component {
        return donetsk;
     } else if (idOfMembers === 'inUsa') {
       return cleveland;
-    } if (idOfMembers === 'InPoland') {
+    } else if (idOfMembers === 'InPoland') {
       return lodz;
+    } if (idOfMembers === 'InKyiv') {
+      return kyiv;
     }
   }
 
@@ -81,6 +86,8 @@ export default class Modal extends Component {
       return '47.917012,37.620669';
     } else if (idOfMembers === 'InPoland') {
       return 'Lodz';
+    } if (idOfMembers === 'InKyiv') {
+      return '50.46892807925003,30.51370074584721';
     }
   }
 // 47.917012, 37.620669

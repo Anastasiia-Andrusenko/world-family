@@ -1,19 +1,16 @@
 import css from "../InKyiv/InKyiv.module.css";
 
+import nastia from "../../../img/nastia.png";
 
-export const InKyiv = () => {
-  return <div className={css.in__kyiv}>
-    <a className={css.link} href="#Cleveland">
+export const InKyiv = ({onMembersClick}) => {
+  return <div className={css.in__kyiv} id='InKyiv' onClick={onMembersClick}>
+    <div className={css.link}>
       <ul className={css.list}>
         <li className={css.item}>
-          <img alt="" src='' className={css.avatar}></img>
-          <span className={css.name}>no one</span>
+          <img alt="nastia_photo" src={nastia} className={css.avatar}></img>
+          <span className={css.name}>Nastia</span>  
         </li>
-        {/* <li className={css.item}>
-          <img alt="" src={tania} className={css.avatar}></img>
-          <span className={css.name}>Tania</span>  
-        </li> */}
       </ul>
-    </a>
+    </div>
   </div>
 } 

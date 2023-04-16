@@ -46,4 +46,18 @@ const optionsUA = {
 export const searchNewsAboutUA = async () => {
   const { data } = await axios.request(optionsUA);
   return data;
-}
+};
+
+const optionKyiv = {
+  method: 'GET',
+  url: 'https://api.newscatcherapi.com/v2/search',
+  params: {q: 'Kyiv', lang: 'en', sort_by: 'relevancy', page: '1'},
+  headers: {
+    'x-api-key': '6orwVgKbvG4w4tc3rUtwLDnGBQVGIJGuynBGLyq1lyw'
+  }
+};
+
+export const searchNewsAboutKyiv = async () => {
+  const { data } = await axios.request(optionKyiv);
+  return data;
+};

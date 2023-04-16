@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import { InUsa } from "../../components/family/InUsa/InUsa";
-// import { InKyiv } from "./family/InKyiv/InKyiv";
+import { InKyiv } from "../../components/family/InKyiv/InKyiv";
 import { InDonetsk } from "../../components/family/InDonetsk/InDonetsk";
 import { InPoland } from "../../components/family/InPoland/InPoland";
 import Modal from "../../components/Modal/Modal";
@@ -64,7 +64,10 @@ const Family = () => {
         </div>
         <div className={css.item}>
           <InPoland onMembersClick={onMembersClick} />
-         </div>
+        </div>
+        <div className={css.item}>
+          <InKyiv onMembersClick={onMembersClick} />
+        </div>
       </motion.div> 
         
     </motion.div>
